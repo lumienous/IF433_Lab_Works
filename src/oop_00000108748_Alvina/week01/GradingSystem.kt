@@ -4,5 +4,5 @@ fun main () {
     var name: String = "John Thor"
     var score : Int = 80
 
-    print("Name: " + name + ", Nilai: " + score)
+    println("Nama: $name, Nilai: $score")
 }
