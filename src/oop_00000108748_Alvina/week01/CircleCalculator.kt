@@ -1,6 +1,6 @@
 package oop_00000108748_Alvina.week01
 
-fun main() {
+fun main(args: Array<String>) {
     val radius = 7.0
     val pi = 3.14
 
