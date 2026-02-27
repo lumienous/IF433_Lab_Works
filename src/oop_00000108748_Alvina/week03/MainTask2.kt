@@ -1,7 +1,7 @@
 package oop_00000108748_Alvina.week03
 
 fun main() {
-    var player = Player("marvelkevin1")
+    var player = Player("lumienours")
     // println("${player.xp}")
 
     player.addXp(50)
