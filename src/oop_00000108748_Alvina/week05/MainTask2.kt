@@ -8,6 +8,12 @@ fun main() {
     println("=== PEMBAYARAN DUBAI CHEWY COOKIE ===")
     for (PaymentMethod in daftarPayment) {
         print("[${PaymentMethod.accountName}] ")
+
+        when (PaymentMethod) {
+            is EWallet -> {
+                PaymentMethod.topUp(50000.0)
+            }
+        }
         PaymentMethod.processPayment(75000.0)
     }
 }

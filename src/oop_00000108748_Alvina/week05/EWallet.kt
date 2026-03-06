@@ -6,10 +6,12 @@ class EWallet(accountName: String, var balance: Double) : PaymentMethod(accountN
             println("Saldo tidak cukup.")
         } else {
             balance -= amount
+            println("[${accountName}] Pembayaran berhasil. >__0")
         }
     }
 
     fun topUp(amount: Double) {
         balance += amount
+        println("Saldo berhasil ditambahkan!")
     }
 }
