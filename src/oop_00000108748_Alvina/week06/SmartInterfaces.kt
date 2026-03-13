@@ -1,7 +1,7 @@
 package oop_00000108748_Alvina.week06
 
 interface SmartDevice {
-    val id : SmartDevice
+    val id : String
     val nama : String
 }
 
