@@ -1,6 +1,6 @@
 package oop_00000108748_Alvina.week07
 
-object DaatabaseManager {
+object DatabaseManager {
     var connectionStatus: String = "Disconnected"
 
     fun connect() {
