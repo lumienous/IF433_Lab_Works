@@ -13,4 +13,12 @@ fun main() {
     println("Drop Chance    : ${senjata.item.rarity.dropChance}")
     println("Durability     : ${senjata.durability}")
 
+    val senjata2 = senjata.item.copy(damage = 25)
+
+    println("\n=== GAME LOG ===")
+
+    processEvent(BattleState.SafeZone)
+    processEvent(BattleState.MonsterEncounter("Goblin Nakal"))
+    processEvent(BattleState.LootDropped(senjata2))
+    processEvent(BattleState.GameOver("Terkena jebakan racun"))
 }
