@@ -18,4 +18,10 @@ fun main(){
             println(e.message)
         }
     }
+
+    // Output
+    // TRX-E01-SUCCESS
+    // TRX-C01-SUCCESS
+    // TRX-E02-SUCCESS
+    // API Invalid: Missing ID
 }
