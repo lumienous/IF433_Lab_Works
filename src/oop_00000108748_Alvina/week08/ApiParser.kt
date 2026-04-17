@@ -10,7 +10,7 @@ class ApiParser {
             "API Invalid: Missing Name"
         }
 
-        val type = rawJson["type"] as? String
+        val type = rawJson["type"].toString()
         if (type == "ELECTRONIC"){
             val warranty = rawJson["warranty"] as? Int? ?: 12
             return Product.Electronic(id.toString(), name.toString(), warranty)
@@ -18,7 +18,18 @@ class ApiParser {
             val size =  rawJson["size"] as? String ?: "All Size"
             return Product.Clothing(id.toString(), name.toString(), size)
         } else {
+            println("Unknown product: $type")
             return null
         }
+    }
+
+    fun checkout(product: Product) {
+        val id = when (product) {
+            is Product.Electronic -> product.id
+            is Product.Clothing -> product.id
+        }
+
+        val res = JavaPaymentService.processPayment(id)!!
+        println(res)
     }
 }
