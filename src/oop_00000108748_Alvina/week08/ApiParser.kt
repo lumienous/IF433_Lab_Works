@@ -18,6 +18,7 @@ class ApiParser {
             val size =  rawJson["size"] as? String ?: "All Size"
             return Product.Clothing(id.toString(), name.toString(), size)
         } else {
+
             return null
         }
     }
