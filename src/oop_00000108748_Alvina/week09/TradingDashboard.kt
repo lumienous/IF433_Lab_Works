@@ -39,4 +39,12 @@ fun main() {
     }
 
     println(uniquePairs)
+
+// Output
+//    === CRYPTO TRADING DASHBOARD ===
+//    WIN [BTC/USDT - LONG]: +18.9% ROE (Lev: 8x)
+//    WIN [ETH/USDT - SHORT]: +9.7% ROE (Lev: 3x)
+//    WIN [XRP/USDT - SHORT]: +6.3% ROE (Lev: 12x)
+//    LOSS [ETH/USDT - SHORT]: -4.2% ROE (Lev: 5x)
+//    [BTC/USDT, ETH/USDT, XRP/USDT, BNB/USDT]
 }
