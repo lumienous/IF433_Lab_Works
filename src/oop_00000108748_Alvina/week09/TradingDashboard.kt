@@ -1,0 +1,12 @@
+package oop_00000108748_Alvina.week09
+
+fun main() {
+    val tradeHistory = listOf(
+        TradeLog("BTC/USDT", "LONG", 10, 12.5, "OPEN"),
+        TradeLog("ETH/USDT", "SHORT", 5, -4.2, "OPEN"),
+        TradeLog("SOL/USDT", "LONG", 8, 18.9, "CLOSED"),
+        TradeLog("XRP/USDT", "SHORT", 12, 6.3, "CLOSED"),
+        TradeLog("BNB/USDT", "LONG", 7, -2.1, "OPEN"),
+        TradeLog("ADA/USDT", "SHORT", 3, 9.7, "CLOSED")
+    )
+}
