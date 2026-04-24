@@ -33,4 +33,10 @@ fun main() {
     topPerformerString.forEach {
         println(it)
     }
+
+    worstPerformerString.forEach {
+        println(it)
+    }
+
+    println(uniquePairs)
 }
