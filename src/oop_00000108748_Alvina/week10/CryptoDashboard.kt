@@ -16,4 +16,12 @@ fun main() {
     println("Responses status: ${response.status}")
     response.data.forEach { println(it) }
 
+    val txRepo = WalletRepository<Transaction>()
+    val t1 = Transaction("BTC", 2.0)
+    val t2 = Transaction("ETH", 3.0)
+    val t3 = Transaction("USDT", 1.5)
+
+    txRepo.add(t1)
+    txRepo.add(t2)
+    txRepo.add(t3)
 }
