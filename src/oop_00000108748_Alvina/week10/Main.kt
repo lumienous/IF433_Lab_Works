@@ -12,8 +12,14 @@ fun main() {
     val itemPrice = PairBox("Bitcoin", 65000)
     println("Aset: ${itemPrice.key}, Harga: ${itemPrice.value}")
 
-    println("\n=== TEST GENETIC FUNCTIONS ===")
+    println("\n=== TEST GENERIC FUNCTIONS ===")
     printData(3.14)
     val result = processData("Stable Coin")
     println("Hasil proses: $result")
+
+    println("\n=== TEST CONSTRAINTS ===")
+    val math = MathBox(10.5, 20)
+    println("Total: ${math.sum()}")
+    println("Terbesar: ${getMax(45, 90)}")
 }
+
