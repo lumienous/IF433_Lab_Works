@@ -12,4 +12,8 @@ fun main() {
 
     val response = ApiResponse("200 OK", coinRepo.getAll())
 
+    println("=== Crypto Dashboard ===")
+    println("Responses status: ${response.status}")
+    response.data.forEach { println(it) }
+
 }
