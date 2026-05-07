@@ -24,4 +24,7 @@ fun main() {
     txRepo.add(t1)
     txRepo.add(t2)
     txRepo.add(t3)
+
+    println("\n=== Transactions ===")
+    txRepo.getAll().forEach { println(it) }
 }
