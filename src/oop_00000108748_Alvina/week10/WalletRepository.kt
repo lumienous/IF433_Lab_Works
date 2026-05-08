@@ -18,5 +18,6 @@ class WalletRepository<T> {
                 return
             }
         }
+        println("Item not found.")
     }
 }
