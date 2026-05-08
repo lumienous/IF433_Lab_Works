@@ -35,4 +35,7 @@ fun main() {
     with(homeDevices){
         println("Jumlah dari devices yang ada di dalam list: ${this.size}")
     }
+
+    val totalPower = homeDevices.run { sumOf { it.powerLoad } }
+    println("Total power usage: $totalPower")
 }
