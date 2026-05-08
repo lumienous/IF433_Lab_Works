@@ -31,4 +31,8 @@ fun main() {
     searchResult?.let {
         println("${it.diagnose()}")
     }
+
+    with(homeDevices){
+        println("Jumlah dari devices yang ada di dalam list: ${this.size}")
+    }
 }
