@@ -38,4 +38,7 @@ fun main() {
 
     val totalPower = homeDevices.run { sumOf { it.powerLoad } }
     println("Total power usage: $totalPower")
+
+    println("\n=== Daftar Perangkat yang Terhubung ===")
+    homeDevices.forEach { println(it.diagnose()) }
 }
