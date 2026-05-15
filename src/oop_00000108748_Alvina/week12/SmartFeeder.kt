@@ -26,5 +26,7 @@ fun main() {
         println("Caught empty! ${e.message}")
     } catch (e : Exception) {
         println("Caught exception! ${e.message}")
+    } finally {
+        println("Siklus pengecekan dispenser pagi selesai.")
     }
 }
